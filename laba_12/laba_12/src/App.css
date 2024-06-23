@@ -1,0 +1,73 @@
+.ImageItem{
+  object-fit: cover;
+  width: 450px;
+  height: 300px;
+  border-radius: 5px 5px 0 0;
+}
+
+header{
+  height: 50px;
+  background-color: #333;
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer{
+  height: 50px;
+  background-color: #333;
+}
+
+.link{
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 30px;
+  font-size: 24px;
+}
+
+.link.active{
+  color: #087;
+}
+
+.contenier{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.ItemMovie{
+  width: 450px;
+  height: 420px;
+  margin: 30px;
+  text-align: left;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.MoviesName{
+  font-size: 30px;
+  margin: 10px;
+}
+
+.info{
+  display: block;
+}
+
+.info.type{
+  width: 100px;
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 10px;
+  color: #087;
+}
+
+.info.year{
+  width: 320px;
+  display: inline-block;
+  font-size: 22px;
+  text-align: right;
+}
+
+.home{
+  padding: 20px;
+}

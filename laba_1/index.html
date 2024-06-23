@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <form action="login">
+    <h2>Заполните форму:</h2>
+
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname"> <br>
+
+    <div class="trouble1" id="trouble1">
+      <p id="reg1"></p><br>
+    </div>
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name"> <br>
+
+    <div class="trouble1" id="trouble2">
+      <p id="reg2"></p><br>
+    </div>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"> <br>
+
+    <div class="trouble3" id="trouble3">
+      <p id="reg3"></p><br>
+    </div>
+
+    <label for="number">Телефон (0xx)xxx-xx-xx:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber"> <br>
+
+    <div class="trouble4" id="trouble4">
+      <p id="reg4"></p><br>
+    </div>
+
+    <label for="how">Откуда вы узнали о нас?:</label>
+    <select id="selectSity">
+      <option>Минск</option>
+      <option>Гродно</option>
+      <option>Витебск</option>
+      <option>Могилев</option>
+      <option>Брест</option>
+    </select> <br>
+
+    <label for="checkbox">Я учусь в БГТУ:</label>
+    <input type="checkbox" id="checkboxStud" name="checkbox" checked="off"><br>
+
+    <div>
+      <label for="">На каком курсе вы учитесь?:</label>
+      <input type="radio" id="radio1" name="radio">1
+      <input type="radio" id="radio2" name="radio">2
+      <input type="radio" id="radio3" name="radio" checked>3
+      <input type="radio" id="radio4" name="radio">4<br>
+    </div>
+
+    <label for="aboutYou">Расскажите о себе</label>
+    <textarea id="aboutYou" name="aboutYou"></textarea><br>
+
+    <div class="trouble5" id="trouble5">
+      <p id="reg5"></p><br>
+    </div>
+
+    <input type="submit" id="sub" name="register" value="Проверить">
+  </form>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

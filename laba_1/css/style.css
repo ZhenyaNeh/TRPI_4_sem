@@ -1,0 +1,59 @@
+form {
+    padding: 5px;
+    width: 1000px;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    width: 200px;
+}
+
+input {
+    background-color: #e2e2e2;
+    border-color: #c2c2c2;
+    border-radius: 4px;
+}
+
+#surname,
+#name,
+#email,
+#phoneNumber {
+    width: 225px;
+}
+
+input[type="radio"] {
+    margin-left: 15px;
+}
+
+#radio1 {
+    margin-left: 0px;
+}
+
+label[for="aboutYou"] {
+    vertical-align: top;
+}
+
+textarea {
+    width: 300px;
+    height: 75px;
+    background-color: #e2e2e2;
+    border-color: #c2c2c2;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.trouble1,
+.trouble2,
+.trouble3,
+.trouble4,
+.trouble5 {
+    display: none;
+    font-size: 12px;
+    margin-left: 205px;
+}
+
+P {
+    color: red;
+}

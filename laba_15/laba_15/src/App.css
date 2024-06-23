@@ -1,0 +1,111 @@
+:root{
+ --bg: #7c7c7c;
+ --bg-cell: #f2f2f2;
+ --bg-filled-cell: #d9d9d9;
+ --text-color: #222222;
+ --error-selected: #F8B6A8;
+ --input-selected: #F8DEA8;
+
+ --cell-size: 8vmin;
+ --button-size: 16vmin;
+ --border-radius: 0.5vmin;
+ --gap: 0.5vmin;
+ --gap-button: 2vmin;
+ --margin-size: 4.5vmin;
+
+ --font-size: 3vmin;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+  empty-cells: none;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  grid-template-rows: repeat(9, auto);
+  gap: var(--gap);
+}
+
+.cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-cell);
+  color: var(--text-color);
+  font-size: var(--font-size);
+  border: 0 solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cell.filled{
+  background-color: var(--bg-filled-cell);
+  caret-color: transparent;
+}
+
+.cell.selected{
+  background-color: var(--input-selected);
+}
+
+.cell.error{
+  background-color: var(--error-selected);
+}
+
+.win{
+  background-color: var(--input-selected);
+}
+
+.ControlButton{
+  display: flex;
+  justify-content: center;
+  margin-top: var(--gap-button);
+}
+
+button{
+  height: var(--cell-size);
+  width: var(--button-size);
+  font-size: var(--font-size);
+  border-radius: var(--border-radius);
+  border: 0 solid black;
+  cursor: pointer;
+}
+
+.Button.Left{
+  margin-right: var(--margin-size);
+}
+
+.Button.Right{
+  margin-left: var(--margin-size);
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6) {
+  margin-right: var(--gap);
+}
+
+.cell:nth-child(19),
+.cell:nth-child(46) {
+  margin-bottom: var(--gap);
+}

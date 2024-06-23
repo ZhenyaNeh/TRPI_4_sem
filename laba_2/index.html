@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <div class="cup" id="cup1" onclick="checkCup(1)"><img id="bucet" class="bucet" src="img/bucket.png" alt=""></div>
+  <div class="cup" id="cup2" onclick="checkCup(2)"><img id="bucet" class="bucet" src="img/bucket.png" alt=""></div>
+  <div class="cup" id="cup3" onclick="checkCup(3)"><img id="bucet" class="bucet" src="img/bucket.png" alt=""></div>
+
+  <div id="ball" class="ball"></div>
+
+  <label for="heightCup">Высота наперстка: </label>
+  <input type="number" id="heightCup" name="heightCup"> <br>
+
+  <div class="trouble1" id="trouble1">
+    <p id="reg1"></p><br>
+  </div>
+
+  <label for="weightCup">Ширина наперстка: </label>
+  <input type="number" id="weightCup" name="weightCup"> <br>
+
+  <div class="trouble2" id="trouble2">
+    <p id="reg2"></p><br>
+  </div>
+
+  <label for="ballParams">Диаметр шарика: </label>
+  <input type="number" id="ballParams" name="ballParams"> <br>
+
+  <div class="trouble3" id="trouble3">
+    <p id="reg3"></p><br>
+  </div>
+
+  <label for="ballSpin">Количество прокруток: </label>
+  <input type="number" id="ballSpin" name="ballSpin"> <br>
+
+  <div class="trouble4" id="trouble4">
+    <p id="reg3"></p><br>
+  </div>
+
+  <p>Результат: <span id="result">0</span></p>
+  <p>Ответ: <span id="answer">...</span></p>
+
+  <button onclick="resetGame()">Обновить</button>
+  <button onclick="Game()">Start</button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

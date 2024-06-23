@@ -1,0 +1,149 @@
+.ImageItem{
+  object-fit: cover;
+  width: 450px;
+  height: 300px;
+  border-radius: 5px 5px 0 0;
+}
+
+header{
+  height: 50px;
+  background-color: #333;
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer{
+  height: 50px;
+  background-color: #333;
+}
+
+.link{
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 30px;
+  font-size: 24px;
+}
+
+.link.active{
+  color: #087;
+}
+
+.contenier{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.ItemMovie{
+  width: 450px;
+  height: 420px;
+  margin: 30px;
+  text-align: left;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.MoviesName{
+  font-size: 24px;
+  margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info{
+  display: block;
+}
+
+.info.type{
+  width: 100px;
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 10px;
+  color: #087;
+}
+
+.info.year{
+  width: 320px;
+  display: inline-block;
+  font-size: 22px;
+  text-align: right;
+}
+
+.home{
+  padding: 20px;
+}
+
+.searchArea{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.searchBox{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap:nowrap;
+  margin-left: 15px;
+}
+
+.searchBox.radio{
+  justify-content: left;
+}
+
+.searchInput {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #888;
+  color: #087;
+  outline: none;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.searchInput:focus{
+  border-bottom: 2px solid #087;
+  color: #087;
+}
+
+.searchButton{
+  width: 60px;
+  height: 30px;
+  background: #087;
+  border: none;
+  border-radius: 15px;
+  color:white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.searchButton:hover{
+  background: #077;
+}
+
+.searchButton:active{
+  background: #099;
+}
+
+.radioInput{
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+.radioInput:checked{
+  border: 5px solid #087;
+}
+

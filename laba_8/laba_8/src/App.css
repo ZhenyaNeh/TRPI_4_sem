@@ -1,0 +1,15 @@
+.App {
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 2px aqua;
+  border-radius: 20px;
+  margin-top: 200px;
+}
+
+body{
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+}

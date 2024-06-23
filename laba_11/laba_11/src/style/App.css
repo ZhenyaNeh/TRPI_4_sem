@@ -1,0 +1,14 @@
+body{
+ background-color: #fac6c6;
+}
+
+.mainDiv{
+  width: 200px;
+  margin: auto;
+  margin-top: 250px;
+  padding: 15px;
+  text-align: center;
+  border: 8px solid rgb(252, 133, 133);
+  border-radius: 15px;
+  background-color: white;
+}

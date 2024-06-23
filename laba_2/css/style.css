@@ -1,0 +1,91 @@
+.bucet {
+    width: 100px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+#cup1,
+#cup2,
+#cup3 {
+    width: 100px;
+    height: 100px;
+    top: 500px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+
+#cup1 {
+    left: 120px;
+}
+
+#cup2 {
+    left: 240px;
+}
+
+#cup3 {
+    left: 360px;
+}
+
+#cup1:hover {
+    transform: translate(0, -10px);
+}
+
+#cup2:hover {
+    transform: translate(0, -10px);
+}
+
+#cup3:hover {
+    transform: translate(0, -10px);
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: none;
+    border-radius: 50%;
+    margin-left: 25px;
+    top: -50px;
+    left: 25px;
+
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-40px);
+    }
+
+    75% {
+        transform: translateY(-20px);
+    }
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.trouble1,
+.trouble2,
+.trouble3,
+.trouble4,
+.trouble5 {
+    display: none;
+    font-size: 12px;
+    margin-left: 205px;
+}
